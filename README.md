@@ -5,6 +5,8 @@ Sample multi-container (PHP, node, MySQL) app utilizing Docker Compose and Weave
 
 Usage
 -------
+NB: If you would like to set up Weave as a service, check the `docs` folder of this repo for a guide that does the equivalent of steps 1 - 3 in the list below.
+
 1. Install Docker and Docker Compose. If you are using a Windows/Mac OS X machine, install Docker Machine as well (all of the required Docker components can be installed together as part of the [Docker Toolbox](https://www.docker.com/products/docker-toolbox)).
 
 2. Install [Weave](https://www.weave.works/).
