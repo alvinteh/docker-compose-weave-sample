@@ -1,0 +1,12 @@
+{
+  "apps" : [
+    {
+      "name": "app",
+      "script": "/var/www/app/src/index.js",
+      "watch": true,
+      "ignore_watch": [
+        "node_modules"
+      ]
+    }
+  ]
+}
