@@ -21,7 +21,7 @@ NB: If you would like to set up Weave as a service, check the `docs` folder of t
 
 7. Expose the app containers to the host by running `weave expose`. If you are running Weave in conjunction with Docker Machine, add a static route to the Weave network through the Docker Machine IP address.
 
-8. If you would like to be able to use the container hostnames on the host as well, add the Weave DNS server. On Linux, this can be done by running `sudo echo nameserver 172.17.0.1 >> /etc/resolv.conf`. On some systems such as CoreOS, `/etc/resolv.conf` is a symlink, so create a static copy of it before adding the nameserver to ensure your changes will not be overriden.
+8. If you would like to be able to use the container hostnames on the host as well, add the Weave DNS server. On Linux, this can be done by running `sudo echo nameserver 172.17.0.1 >> /etc/resolv.conf`, where `172.17.0.1` is the Weave DNS server's IP address (the IP address can be retrieved by running a Docker container and running `cat /etc/resolv.conf`). On some systems such as CoreOS, `/etc/resolv.conf` is a symlink, so create a static copy of it before adding the nameserver to ensure your changes will not be overriden.
 
 9. (Optional) If you would like to expose the app to the public, create another nginx app to serve as a proxy. See [my other nginx sample repo](https://github.com/alvinteh/docker-compose-nginx-proxy-sample) for more details. 
 
